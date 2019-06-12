@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Text, View, Image, StyleSheet } from 'react-native'
 import { Dimensions, PixelRatio } from 'react-native';
 import BookmarksPageBackground from './BookmarksPageBackground.js';
-// import Weather from './BookmarksPageBackground.js';
+import Weather from './Weather.js';
 
 
 export default class BookmarksPage extends Component {
@@ -10,7 +10,7 @@ export default class BookmarksPage extends Component {
     return (
       <React.Fragment>
         <BookmarksPageBackground/>
-        {/* <Weather style={{zIndex: 10}}/> */}
+        <Weather style={{zIndex: 10}}/>
       </React.Fragment>
     )
   }
