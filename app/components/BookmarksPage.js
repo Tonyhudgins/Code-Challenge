@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View, Image, StyleSheet } from 'react-native'
 import { Dimensions, PixelRatio } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 
 export default class BookmarksPage extends Component {
   render() {
@@ -15,15 +16,17 @@ export default class BookmarksPage extends Component {
             style={styles.backgroundImage}
           >
           </Image> 
-          <View style={{
-            flex: 1,
-            position: 'absolute',
-            zIndex: 20,
-            left: 0,
-            right: 0, 
-            alignSelf: 'flex-start',
-          }}>
-          </View>
+          <LinearGradient
+            colors={['rgba(53,53,253,1)', 'rgba(253,253,253,0)']}
+            style={{
+              position: 'absolute',
+              zIndex: 20,
+              left: 0,
+              right: 0, 
+              height: 160,
+              justifyContent: 'flex-start',
+            }}
+          /> 
           <Text style={{backgroundColor: '#BBB', zIndex: 100, position: 'absolute'}}> Goodbye World {width}</Text>
 
           </View>
