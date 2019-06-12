@@ -1,14 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
+import BookmarksPage from './app/components/BookmarksPage.js';
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={{backgroundColor:'grey'}}> Hello World 2 </Text>
-      <Text style={{backgroundColor:'grey'}}> Hello World 2 </Text>
-      <Text style={{backgroundColor:'grey'}}> Hello World 2 </Text>
-      <Text style={{backgroundColor:'grey'}}> Hello World 2 </Text>
-    </View>
+    <BookmarksPage/> 
   );
 }
 
