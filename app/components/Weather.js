@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View, Image, StyleSheet } from 'react-native'
 import { Dimensions } from 'react-native';
-import { Font } from 'expo';
+import * as Font from 'expo-font';
 
 export default class BookmarksPage extends Component {
   constructor() {
@@ -54,10 +54,12 @@ const styles = StyleSheet.create({
 
   salutation: {
     fontFamily: 'SF-Pro-Display-Light', fontSize: 32,
-    marginVertical: 10, 
+//    marginVertical: 10, 
+    color: '#0A0A0A',
   },
   text: {
     fontFamily: 'SF-Pro-Display-Medium', fontSize: 13,
-    marginVertical: 10, 
+//    marginVertical: 10, 
+    color: '#383838',
   },
 })
