@@ -4,6 +4,7 @@ import { Dimensions, PixelRatio } from 'react-native';
 import { Constants } from 'expo';
 import BookmarksPageBackground from './BookmarksPageBackground.js';
 import Weather from './Weather.js';
+import BookmarksCarousel from './BookmarksCarousel.js';
 
 export default class BookmarksPage extends Component {
   render() {
@@ -12,6 +13,7 @@ export default class BookmarksPage extends Component {
         <BookmarksPageBackground/>
         <View style={styles.layer2}> 
           <Weather/>
+          <BookmarksCarousel/> 
         </View>
       </React.Fragment>
     )
