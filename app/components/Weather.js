@@ -22,7 +22,7 @@ export default class BookmarksPage extends Component {
   render() {
     return (
       <View style={styles.innerContainer}>
-        <Image style={{width:width}} source={require('../assets/images/weatherHeader.png')}></Image>
+        <Image style={{width:width, position: "absolute"}} source={require('../assets/images/weatherHeader.png')}></Image>
         {this.state.fontLoaded ? 
           (
             <View style={styles.weatherText}>
@@ -43,22 +43,22 @@ var {height, width} = Dimensions.get('window')
 const styles = StyleSheet.create({
   innerContainer: {
     flex: 1,
-    position: 'absolute',
+//    position: 'absolute',
   },
 
   weatherText: {
     marginHorizontal: 25,
-    marginVertical: 60, 
-    position: 'absolute',  
+    marginVertical: 40, 
+  //  position: 'absolute',  
   },
 
   salutation: {
-    fontFamily: 'SF-Pro-Display-Light', fontSize: 32,
+    fontFamily: 'SF-Pro-Display-Light', fontSize: 24,
 //    marginVertical: 10, 
     color: '#0A0A0A',
   },
   text: {
-    fontFamily: 'SF-Pro-Display-Medium', fontSize: 13,
+    fontFamily: 'SF-Pro-Display-Medium', fontSize: 10,
 //    marginVertical: 10, 
     color: '#383838',
   },

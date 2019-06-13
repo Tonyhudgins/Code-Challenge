@@ -32,7 +32,8 @@ export default class BookmarksPageBackground extends Component {
                 style={{...styles.gradient, ...styles.gradientBottom}}
               />
             </View>
-            <Text style={{backgroundColor: '#BBB', zIndex: 100, position: 'absolute'}}> Goodbye World {width}</Text>
+            {/* <Text style={{backgroundColor: '#BBB', zIndex: 100, position: 'absolute'}}> 
+            Display Info {height} x {width} @ {pixRatio} FS {fontScale}</Text>  */}
           </View>
         </View> 
       </View>
@@ -41,11 +42,12 @@ export default class BookmarksPageBackground extends Component {
 }
 
 var {height, width} = Dimensions.get('window')
+var pixRatio = PixelRatio.get()
+var fontScale = PixelRatio.getFontScale()
 
 const styles = StyleSheet.create({
   innerContainer: {
     flex: 1,
-    alignItems: 'center',
     backgroundColor: '#FDFDFD',
   },
 
@@ -61,8 +63,6 @@ const styles = StyleSheet.create({
   },
 
   text: {
-    marginHorizontal: 8,
-    marginVertical: 10, 
     backgroundColor: 'grey',  
   },
 
@@ -79,12 +79,12 @@ const styles = StyleSheet.create({
   },
 
   gradientTop: {
-    height: 160,
+    height: 160/360*width,
     justifyContent: 'flex-start',
   },
 
   gradientBottom: {
-    height: 200,
+    height: 200/360*width,
     justifyContent: 'flex-end',
   },
 })
