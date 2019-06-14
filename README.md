@@ -20,6 +20,8 @@ Github: https://github.com/Tonyhudgins/
 
 LinkedIn: https://www.linkedin.com/in/makemachines/
 
+Code-Challenge submission [README](app/README.md)
+
 ## Intro
 
 The goal of this challenge is to assess a candidate’s proficiency in Javascript, React Native and using APIs, by implementing a simple app that simulates a **Place Bookmarks** feature.
