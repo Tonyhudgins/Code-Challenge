@@ -16,7 +16,9 @@ Email: tonyhudgins@gmail.com
 
 Resume: _link to your resume_
 
-Additional: _Such as Github or LinkedIn, etc_
+Github: https://github.com/Tonyhudgins/
+
+LinkedIn: https://www.linkedin.com/in/makemachines/
 
 ## Intro
 
