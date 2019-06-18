@@ -32,8 +32,8 @@ export default class BookmarksPageBackground extends Component {
                 style={{...styles.gradient, ...styles.gradientBottom}}
               />
             </View>
-            {/* <Text style={{backgroundColor: '#BBB', zIndex: 100, position: 'absolute'}}> 
-            Display Info {height} x {width} @ {pixRatio} FS {fontScale}</Text>  */}
+            <Text style={{backgroundColor: '#BBB', zIndex: 100, position: 'absolute', top: 240}}> 
+            Display Info {height} x {width} @ {pixRatio} FS {fontScale}</Text>  
           </View>
         </View> 
       </View>
@@ -60,6 +60,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end', 
     marginBottom: 0, 
     backgroundColor: 'grey',
+    maxHeight: 300,
   },
 
   text: {
